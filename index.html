@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="PenguTactic is a private Teamfight Tactics analytics and machine-learning project focused on post-game analysis, performance tracking, and personalized coaching." />
+  <title>PenguTactic — TFT Post-Game Analytics</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1020;
+      --panel: #121a2e;
+      --panel-2: #172139;
+      --text: #eef3ff;
+      --muted: #aab6cf;
+      --accent: #7dd3fc;
+      --accent-2: #a7f3d0;
+      --border: rgba(255,255,255,.10);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at 20% 0%, #172554 0, transparent 35%), var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap { width: min(980px, calc(100% - 40px)); margin: 0 auto; }
+    header { padding: 96px 0 56px; }
+    .badge {
+      display: inline-block;
+      padding: 7px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--accent-2);
+      background: rgba(167,243,208,.06);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+    h1 { margin: 18px 0 10px; font-size: clamp(44px, 8vw, 78px); line-height: .98; letter-spacing: -.055em; }
+    .lead { max-width: 760px; margin: 0; color: var(--muted); font-size: clamp(18px, 2.5vw, 23px); }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 30px 0 56px; }
+    .card { padding: 24px; border: 1px solid var(--border); border-radius: 18px; background: linear-gradient(180deg, var(--panel-2), var(--panel)); }
+    .card h2 { margin: 0 0 8px; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); font-size: 15px; }
+    section { padding: 28px 0; border-top: 1px solid var(--border); }
+    section h2 { margin: 0 0 12px; font-size: 28px; letter-spacing: -.02em; }
+    section p { margin: 0; max-width: 780px; color: var(--muted); }
+    .status { color: var(--accent); font-weight: 700; }
+    footer { padding: 50px 0 70px; color: #7f8ca6; font-size: 13px; }
+    a { color: var(--accent); }
+    @media (max-width: 760px) {
+      header { padding-top: 64px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <span class="badge">Private research project · V0</span>
+      <h1>PenguTactic</h1>
+      <p class="lead">A personal Teamfight Tactics analytics and machine-learning project for post-game analysis, performance tracking, and personalized coaching.</p>
+    </header>
+
+    <div class="grid" aria-label="Project principles">
+      <article class="card">
+        <h2>Post-game analysis</h2>
+        <p>Designed to help review completed TFT matches and identify patterns in performance over time.</p>
+      </article>
+      <article class="card">
+        <h2>Riot API data</h2>
+        <p>Uses official Riot Games API data to build structured, reproducible match analysis workflows.</p>
+      </article>
+      <article class="card">
+        <h2>Personalized ML</h2>
+        <p>Explores machine-learning methods for private research into player-specific trends and coaching insights.</p>
+      </article>
+    </div>
+
+    <section>
+      <h2>Purpose</h2>
+      <p>PenguTactic is currently developed for personal/private use. The project focuses on historical match analysis and offline research. It is not intended to provide real-time, prescriptive in-game decision making.</p>
+    </section>
+
+    <section>
+      <h2>Current status</h2>
+      <p><span class="status">V0 under active development.</span> The current work covers Riot API integration, structured TFT match processing, local analytics, and baseline machine-learning experimentation.</p>
+    </section>
+
+    <section>
+      <h2>Privacy & scope</h2>
+      <p>The main application source code, datasets, models, credentials, and technical implementation remain private. This website is a public product overview only.</p>
+    </section>
+
+    <footer>
+      PenguTactic is an independent project and is not endorsed by Riot Games. Riot Games, Teamfight Tactics, and related marks are trademarks or registered trademarks of Riot Games, Inc.
+    </footer>
+  </main>
+</body>
+</html>
