@@ -8,8 +8,8 @@ The landing page tracks the state of the main private repository conservatively:
 - review-stage, deployment, and future work is labelled **in progress** or **planned**;
 - PenguTactic remains in **V1** until the end-to-end personalized post-game coach is operational.
 
-Current public snapshot: **V1.7 — Ladder Intelligence**, including the Set 18 longitudinal cohort, canonical acquisition metrics, C1/C2/C3 completion, C4 planning, and the remaining V1 runtime work.
+Current public snapshot: **V1.7 — Ladder Intelligence**, including the Set 18 longitudinal cohort, canonical acquisition metrics, C1/C2/C3 completion, C4 planning, and the remaining V1 work.
 
-This repository contains only the public static landing page. The main application source code, datasets, models, credentials, and private runtime data remain private.
+This repository contains only the public static landing page. Application source code, datasets, models, credentials, operational deployment details, and private data remain private.
 
 PenguTactic is an independent project and is not endorsed by Riot Games.
