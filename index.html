@@ -44,9 +44,14 @@
       border-bottom: 1px solid var(--border);
     }
     .brand { font-weight: 800; letter-spacing: -.02em; color: var(--text); text-decoration: none; }
+    .top-actions { display: flex; align-items: center; justify-content: flex-end; gap: 18px; flex-wrap: wrap; }
     nav { display: flex; flex-wrap: wrap; gap: 16px; font-size: 14px; }
     nav a { color: var(--muted); text-decoration: none; }
     nav a:hover, nav a:focus-visible { color: var(--text); }
+    .language-switcher { display: inline-flex; gap: 3px; padding: 3px; border: 1px solid var(--border); border-radius: 999px; background: rgba(255,255,255,.035); }
+    .lang-button { border: 0; border-radius: 999px; padding: 5px 9px; background: transparent; color: var(--muted); font: inherit; font-size: 12px; font-weight: 800; cursor: pointer; }
+    .lang-button:hover, .lang-button:focus-visible { color: var(--text); }
+    .lang-button[aria-pressed="true"] { color: var(--bg); background: var(--accent-2); }
     header { padding: 78px 0 44px; }
     .badge-row { display: flex; flex-wrap: wrap; gap: 10px; }
     .badge, .pill {
@@ -116,6 +121,7 @@
     @media (max-width: 680px) {
       .wrap { width: min(100% - 28px, 1060px); }
       .topbar { align-items: flex-start; flex-direction: column; gap: 10px; }
+      .top-actions { width: 100%; justify-content: flex-start; gap: 12px; }
       nav { gap: 12px; }
       header { padding: 56px 0 34px; }
       .stats, .roadmap, .status-grid { grid-template-columns: 1fr; }
@@ -132,12 +138,18 @@
   <main class="wrap">
     <div class="topbar">
       <a class="brand" href="#top">PenguTactic</a>
-      <nav aria-label="Primary navigation">
-        <a href="#status">Status</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#technical">Technical scope</a>
-        <a href="#privacy">Privacy</a>
-      </nav>
+      <div class="top-actions">
+        <nav aria-label="Primary navigation">
+          <a href="#status">Status</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#technical">Technical scope</a>
+          <a href="#privacy">Privacy</a>
+        </nav>
+        <div class="language-switcher" role="group" aria-label="Language">
+          <button class="lang-button" type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button class="lang-button" type="button" data-lang="fr" aria-pressed="false">FR</button>
+        </div>
+      </div>
     </div>
 
     <header id="top">
@@ -280,5 +292,6 @@
       Status snapshot: 28 August 2026. PenguTactic is an independent project and is not endorsed by Riot Games. Riot Games, Teamfight Tactics, and related marks are trademarks or registered trademarks of Riot Games, Inc.
     </footer>
   </main>
+  <script src="i18n.js"></script>
 </body>
 </html>
