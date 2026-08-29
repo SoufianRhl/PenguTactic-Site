@@ -3,8 +3,8 @@ const translations = {
     nav: ["Status", "Roadmap", "Technical scope", "Privacy"],
     badge: "V1.7 · Ladder Intelligence",
     activeV1: "V1 in active development",
-    lead: "A private Teamfight Tactics data-engineering and machine-learning research project focused on rigorous post-game analysis, longitudinal ladder intelligence, and reproducible player-level evidence.",
-    heroNote: "<strong>Current focus:</strong> Set 18 longitudinal acquisition. PenguTactic is still in <strong>V1</strong>; the end-to-end personalized post-game coach required to close V1 has not been completed.",
+    lead: "A Teamfight Tactics analytics and coaching companion currently in prototype development and intended for future public release, focused on rigorous post-game analysis, longitudinal player intelligence, and personalized improvement.",
+    heroNote: "<strong>Current focus:</strong> validating trustworthy Set 18 data acquisition and post-game telemetry. PenguTactic is still in <strong>V1</strong>; the complete public-facing personalized coaching experience remains under development.",
     metrics: [
       "Set 18 players currently tracked in the longitudinal cohort",
       "canonical Ranked Set 18 matches",
@@ -13,50 +13,50 @@ const translations = {
       "historical IDs not yet downloaded and still to drain"
     ],
     statusTitle: "Current project status",
-    statusIntro: "Only work integrated into the main branch is treated as completed. Experimental, review-stage, or deployment work is explicitly kept separate.",
+    statusIntro: "This public status summarizes validated product capabilities while experimental implementation details, credentials, and private operational infrastructure remain outside the public project surface.",
     phaseActive: "Phase 1.7 active",
     statusCards: [
-      ["C1 — Longitudinal Core", "Completed. Versioned snapshots, private locator storage, append-only observations, and delta computation are integrated."],
-      ["C2 — Multi-region Baseline", "Completed. The initial Set 18 baseline spans KR, VN2, EUW1, and NA1 and seeded the longitudinal cohort."],
-      ["C3 — Continuous Match Watch", "Completed at core level. Adaptive scheduling, lobby deduplication, strict Set/Ranked gates, provenance, and fail-closed validation are integrated."],
+      ["C1 — Longitudinal Core", "Completed. Versioned snapshots, pseudonymized scientific outputs, append-only observations, and delta computation are validated."],
+      ["C2 — Multi-region Baseline", "Completed. The initial Set 18 baseline spans multiple Riot regions and seeds longitudinal player analysis."],
+      ["C3 — Continuous Match Watch", "Operationally validated. Adaptive scheduling, lobby deduplication, strict Set/Ranked gates, provenance, and fail-closed validation support continuous acquisition."],
       ["C4 — Rank remeasurement", "Planned next. Repeated snapshots will measure promotions, demotions, Apex persistence, and longitudinal rank movement."]
     ],
     roadmapTitle: "V1 roadmap",
-    roadmapIntro: "The roadmap is acquisition-first: establish trustworthy longitudinal evidence before the personalized post-game coaching layer is considered complete.",
+    roadmapIntro: "The roadmap is evidence-first: establish trustworthy longitudinal and post-game data before the personalized coaching layer is considered complete.",
     v1Incomplete: "V1 not complete",
     roadmapCards: [
-      ["Done", "C1 · Core", "Snapshot contracts, private identity mapping, append-only storage, and longitudinal deltas."],
+      ["Done", "C1 · Core", "Snapshot contracts, pseudonymized identity handling, append-only storage, and longitudinal deltas."],
       ["Done", "C2 · Baseline", "Multi-region Set 18 cohort initialization and baseline ladder observations."],
       ["Done", "C3 · Watcher", "Continuous match observation with strict canonical admission and acquisition provenance."],
       ["Planned next", "C4 · Remeasure", "Periodic rank snapshots across Set 18 to build actual trajectories instead of one-time ladder states."]
     ],
     technicalTitle: "Technical scope",
-    technicalIntro: "PenguTactic deliberately distinguishes an integrated acquisition core from deployment and future V1 capabilities.",
+    technicalIntro: "PenguTactic separates public product capabilities from private research data, credentials, and internal operational tooling.",
     technicalCards: [
-      ["Set 18 historical backlog drain", "In progress. The historical universe is frozen at 3,222 candidate Match-v1 IDs; 2,564 IDs remain to be downloaded and classified."],
+      ["Set 18 historical coverage", "In progress. Historical match coverage is being expanded and classified through strict canonical validation."],
       ["Persistent rejection index — Integrated", "Reusable non-canonical classifications are persisted with safeguards that prevent unsafe reuse outside their intended acquisition scope."],
-      ["Permanent Set 18 runtime", "Planned. Long-running operational deployment and recovery work remains before permanent unattended operation."],
-      ["Set 17 Historical Grabber", "Planned. Historical Set 17 acquisition remains gated by the mature-corpus audit and a bounded archive canary."],
-      ["PINNED_PLAYER", "Personal longitudinal tracking is planned within V1."]
+      ["Continuous Set 18 acquisition — Operational", "Long-running acquisition has been validated with bounded scheduling, rate-limit handling, provenance, and fail-closed data admission."],
+      ["Historical coverage expansion — Planned", "Additional historical coverage remains gated by dataset-quality audits and bounded validation canaries."],
+      ["Personalized player analysis — Planned", "Longitudinal player timelines and personalized post-game coaching remain core V1 goals."]
     ],
-    versionRule: "<strong>Versioning rule:</strong> PenguTactic is not V2. V2 begins only after the operational end-to-end personalized post-game coach closes V1.",
+    versionRule: "<strong>Versioning rule:</strong> PenguTactic remains V1 until the end-to-end personalized post-game coaching experience is operational.",
     privacyTitle: "Data integrity & privacy",
     privacyIntro: "The project is designed around explicit provenance, fail-closed admission, pseudonymized scientific data, and strict separation between factual collection and expert qualification.",
     privacyCards: [
       ["Canonical gates", "Current Set 18 canonical data is restricted to standard Ranked TFT (<code>queue_id == 1100</code>) and <code>set_number == 18</code>."],
       ["Failure isolation", "Invalid or non-canonical captures remain quarantined instead of silently contaminating canonical datasets."],
-      ["Private identity boundary", "Raw player identities and credentials stay in private runtime storage; scientific outputs use pseudonymized identifiers."]
+      ["Private data boundary", "Credentials, raw identities, private research datasets, models, and internal operational tooling are not exposed through this public site."]
     ],
     purposeTitle: "Purpose",
-    purposeDesc: "PenguTactic is developed for personal/private research into TFT post-game analysis. It is not intended to provide real-time prescriptive in-game decision making. The public website is a status and product overview; application code, datasets, models, credentials, and private runtime data remain outside this public repository.",
-    footer: "Status snapshot: 28 August 2026. PenguTactic is an independent project and is not endorsed by Riot Games. Riot Games, Teamfight Tactics, and related marks are trademarks or registered trademarks of Riot Games, Inc."
+    purposeDesc: "PenguTactic is being developed as a future public Teamfight Tactics post-game analytics and personalized coaching companion. The current version is an early prototype and research environment. It does not provide real-time prescriptive decision-making, opponent scouting, hidden information, or gameplay automation. Application source code, research datasets, models, credentials, and private runtime data are not publicly exposed.",
+    footer: "Status snapshot: 29 August 2026. PenguTactic is an independent project and is not endorsed by Riot Games. Riot Games, Teamfight Tactics, and related marks are trademarks or registered trademarks of Riot Games, Inc."
   },
   fr: {
     nav: ["Statut", "Roadmap", "Périmètre technique", "Confidentialité"],
     badge: "V1.7 · Intelligence du ladder",
     activeV1: "V1 en développement actif",
-    lead: "Un projet privé d’ingénierie des données et de recherche en machine learning appliqué à Teamfight Tactics, centré sur l’analyse post-partie rigoureuse, l’intelligence longitudinale du ladder et des preuves reproductibles au niveau joueur.",
-    heroNote: "<strong>Focus actuel :</strong> acquisition longitudinale du Set 18. PenguTactic est toujours en <strong>V1</strong> ; le coach post-partie personnalisé de bout en bout nécessaire pour clôturer la V1 n’est pas encore terminé.",
+    lead: "Un compagnon d’analyse et de coaching pour Teamfight Tactics, actuellement en phase de prototype et destiné à une future publication publique, centré sur l’analyse post-partie rigoureuse, le suivi longitudinal des joueurs et l’amélioration personnalisée.",
+    heroNote: "<strong>Focus actuel :</strong> validation d’une acquisition Set 18 fiable et de la télémétrie post-partie. PenguTactic est toujours en <strong>V1</strong> ; l’expérience complète de coaching personnalisé destinée au public reste en développement.",
     metrics: [
       "joueurs du Set 18 actuellement suivis dans la cohorte longitudinale",
       "matchs Ranked Set 18 canoniques",
@@ -65,57 +65,57 @@ const translations = {
       "IDs historiques jamais téléchargés restant à drainer"
     ],
     statusTitle: "État actuel du projet",
-    statusIntro: "Seul le travail intégré à la branche main est considéré comme terminé. Les travaux expérimentaux, en review ou liés au déploiement restent explicitement séparés.",
+    statusIntro: "Ce statut public résume les capacités validées du produit, tandis que les détails expérimentaux, les identifiants sensibles et l’infrastructure opérationnelle privée restent hors de la surface publique du projet.",
     phaseActive: "Phase 1.7 active",
     statusCards: [
-      ["C1 — Cœur longitudinal", "Terminé. Les snapshots versionnés, le stockage privé des localisateurs, les observations append-only et le calcul des deltas sont intégrés."],
-      ["C2 — Baseline multi-régions", "Terminé. La baseline initiale du Set 18 couvre KR, VN2, EUW1 et NA1 et a amorcé la cohorte longitudinale."],
-      ["C3 — Surveillance continue des matchs", "Terminé au niveau du cœur. L’ordonnancement adaptatif, la déduplication des lobbies, les verrous stricts Set/Ranked, la provenance et la validation fail-closed sont intégrés."],
+      ["C1 — Cœur longitudinal", "Terminé. Les snapshots versionnés, les sorties scientifiques pseudonymisées, les observations append-only et le calcul des deltas sont validés."],
+      ["C2 — Baseline multi-régions", "Terminé. La baseline initiale du Set 18 couvre plusieurs régions Riot et amorce l’analyse longitudinale des joueurs."],
+      ["C3 — Surveillance continue des matchs", "Validée opérationnellement. L’ordonnancement adaptatif, la déduplication des lobbies, les verrous stricts Set/Ranked, la provenance et la validation fail-closed soutiennent l’acquisition continue."],
       ["C4 — Remesure du rang", "Planifié ensuite. Des snapshots répétés mesureront promotions, relégations, persistance Apex et évolution longitudinale du rang."]
     ],
     roadmapTitle: "Roadmap V1",
-    roadmapIntro: "La roadmap priorise l’acquisition : établir des preuves longitudinales fiables avant de considérer la couche de coaching post-partie personnalisé comme terminée.",
+    roadmapIntro: "La roadmap priorise les preuves : établir des données longitudinales et post-partie fiables avant de considérer la couche de coaching personnalisé comme terminée.",
     v1Incomplete: "V1 non terminée",
     roadmapCards: [
-      ["Terminé", "C1 · Cœur", "Contrats de snapshots, correspondance d’identité privée, stockage append-only et deltas longitudinaux."],
+      ["Terminé", "C1 · Cœur", "Contrats de snapshots, gestion pseudonymisée des identités, stockage append-only et deltas longitudinaux."],
       ["Terminé", "C2 · Baseline", "Initialisation multi-régions de la cohorte Set 18 et observations initiales du ladder."],
       ["Terminé", "C3 · Watcher", "Observation continue des matchs avec admission canonique stricte et provenance d’acquisition."],
       ["Planifié ensuite", "C4 · Remesure", "Snapshots périodiques du rang sur le Set 18 afin de construire de vraies trajectoires plutôt que des états ponctuels du ladder."]
     ],
     technicalTitle: "Périmètre technique",
-    technicalIntro: "PenguTactic distingue volontairement le cœur d’acquisition intégré du déploiement et des futures capacités de la V1.",
+    technicalIntro: "PenguTactic sépare les capacités publiques du produit des données de recherche, identifiants sensibles et outils opérationnels internes qui restent privés.",
     technicalCards: [
-      ["Drain de l’historique Set 18", "En cours. L’univers historique est figé à 3 222 IDs Match-v1 candidats ; 2 564 IDs restent à télécharger et classifier."],
-      ["Index de rejet persistant — Intégré", "Les classifications non canoniques réutilisables sont persistées avec des garde-fous empêchant leur réutilisation hors du périmètre d’acquisition prévu."],
-      ["Runtime permanent Set 18", "Planifié. Le déploiement opérationnel longue durée et la récupération après incident restent à finaliser avant une exécution permanente sans surveillance."],
-      ["Collecteur historique Set 17", "Planifié. L’acquisition historique du Set 17 reste conditionnée par l’audit du corpus mature et un canary d’archive borné."],
-      ["PINNED_PLAYER", "Le suivi longitudinal personnel est planifié dans la V1."]
+      ["Couverture historique Set 18", "En cours. La couverture historique est progressivement étendue et classifiée avec une validation canonique stricte."],
+      ["Index de rejet persistant — Intégré", "Les classifications non canoniques réutilisables sont persistées avec des garde-fous empêchant leur réutilisation hors du périmètre prévu."],
+      ["Acquisition continue Set 18 — Opérationnelle", "L’acquisition longue durée a été validée avec ordonnancement borné, gestion des limites de débit, provenance et admission fail-closed."],
+      ["Extension de la couverture historique — Planifiée", "Les extensions historiques supplémentaires restent conditionnées par des audits de qualité du dataset et des canaries de validation bornés."],
+      ["Analyse personnalisée des joueurs — Planifiée", "Les timelines longitudinales et le coaching post-partie personnalisé restent des objectifs centraux de la V1."]
     ],
-    versionRule: "<strong>Règle de version :</strong> PenguTactic n’est pas en V2. La V2 ne commencera qu’après la clôture de la V1 par un coach post-partie personnalisé opérationnel de bout en bout.",
+    versionRule: "<strong>Règle de version :</strong> PenguTactic reste en V1 jusqu’à ce que l’expérience de coaching post-partie personnalisé de bout en bout soit opérationnelle.",
     privacyTitle: "Intégrité des données & confidentialité",
     privacyIntro: "Le projet repose sur une provenance explicite, une admission fail-closed, des données scientifiques pseudonymisées et une séparation stricte entre collecte factuelle et qualification experte.",
     privacyCards: [
       ["Verrous canoniques", "Les données canoniques actuelles du Set 18 sont limitées au TFT Ranked standard (<code>queue_id == 1100</code>) et à <code>set_number == 18</code>."],
       ["Isolation des échecs", "Les captures invalides ou non canoniques restent en quarantaine au lieu de contaminer silencieusement les datasets canoniques."],
-      ["Frontière d’identité privée", "Les identités brutes des joueurs et les identifiants sensibles restent dans le stockage privé ; les sorties scientifiques utilisent des identifiants pseudonymisés."]
+      ["Frontière des données privées", "Les identifiants sensibles, identités brutes, datasets de recherche privés, modèles et outils opérationnels internes ne sont pas exposés via ce site public."]
     ],
     purposeTitle: "Objectif",
-    purposeDesc: "PenguTactic est développé pour de la recherche personnelle et privée autour de l’analyse post-partie TFT. Il n’est pas destiné à fournir des décisions prescriptives en temps réel pendant une partie. Le site public présente uniquement le produit et son état ; le code applicatif, les datasets, les modèles, les identifiants sensibles et les données privées restent hors de ce dépôt public.",
-    footer: "État au 28 août 2026. PenguTactic est un projet indépendant et n’est pas approuvé par Riot Games. Riot Games, Teamfight Tactics et les marques associées sont des marques commerciales ou déposées de Riot Games, Inc."
+    purposeDesc: "PenguTactic est développé comme un futur compagnon public d’analyse post-partie et de coaching personnalisé pour Teamfight Tactics. La version actuelle reste un prototype et un environnement de recherche. Il ne fournit pas de recommandations prescriptives en temps réel, de scouting adverse, d’informations cachées ni d’automatisation du gameplay. Le code applicatif, les datasets de recherche, les modèles, les identifiants sensibles et les données runtime privées ne sont pas exposés publiquement.",
+    footer: "État au 29 août 2026. PenguTactic est un projet indépendant et n’est pas approuvé par Riot Games. Riot Games, Teamfight Tactics et les marques associées sont des marques commerciales ou déposées de Riot Games, Inc."
   }
 };
 
 const pageMeta = {
   en: {
     title: "PenguTactic — V1.7 Ladder Intelligence",
-    description: "PenguTactic is a private Teamfight Tactics data-engineering and machine-learning research project. V1.7 focuses on longitudinal ladder intelligence and Set 18 acquisition.",
+    description: "PenguTactic is a Teamfight Tactics analytics and coaching companion in prototype development, intended for future public release and focused on post-game improvement.",
     navLabel: "Primary navigation",
     languageLabel: "Language",
     statsLabel: "Current Set 18 acquisition metrics"
   },
   fr: {
     title: "PenguTactic — V1.7 Intelligence du ladder",
-    description: "PenguTactic est un projet privé d’ingénierie des données et de recherche en machine learning appliqué à Teamfight Tactics. La V1.7 se concentre sur l’intelligence longitudinale du ladder et l’acquisition du Set 18.",
+    description: "PenguTactic est un compagnon d’analyse et de coaching Teamfight Tactics en phase de prototype, destiné à une future publication publique et centré sur l’amélioration post-partie.",
     navLabel: "Navigation principale",
     languageLabel: "Langue",
     statsLabel: "Métriques actuelles d’acquisition du Set 18"
@@ -169,11 +169,8 @@ function applyLanguage(language) {
   setText("#technical h2", t.technicalTitle);
   setText("#technical > p", t.technicalIntro);
   document.querySelectorAll("#technical .status-card").forEach((card, index) => {
-    const title = card.querySelector("h3");
-    const description = card.querySelector("p");
-    if (index === 4) title.innerHTML = "<code>PINNED_PLAYER</code>";
-    else title.textContent = t.technicalCards[index][0];
-    description.textContent = t.technicalCards[index][1];
+    card.querySelector("h3").textContent = t.technicalCards[index][0];
+    card.querySelector("p").textContent = t.technicalCards[index][1];
   });
   setHtml("#technical .callout", t.versionRule);
 
