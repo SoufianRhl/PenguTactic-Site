@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="PenguTactic is a private Teamfight Tactics data-engineering and machine-learning research project. V1.7 focuses on longitudinal ladder intelligence and Set 18 acquisition." />
+  <meta name="description" content="PenguTactic is a Teamfight Tactics analytics and coaching companion in prototype development, intended for future public release and focused on post-game improvement." />
   <title>PenguTactic — V1.7 Ladder Intelligence</title>
   <style>
     :root {
@@ -158,8 +158,8 @@
         <span class="pill pill-active">V1 in active development</span>
       </div>
       <h1>PenguTactic</h1>
-      <p class="lead">A private Teamfight Tactics data-engineering and machine-learning research project focused on rigorous post-game analysis, longitudinal ladder intelligence, and reproducible player-level evidence.</p>
-      <p class="hero-note"><strong>Current focus:</strong> Set 18 longitudinal acquisition. PenguTactic is still in <strong>V1</strong>; the end-to-end personalized post-game coach required to close V1 has not been completed.</p>
+      <p class="lead">A Teamfight Tactics analytics and coaching companion currently in prototype development and intended for future public release, focused on rigorous post-game analysis, longitudinal player intelligence, and personalized improvement.</p>
+      <p class="hero-note"><strong>Current focus:</strong> validating trustworthy Set 18 data acquisition and post-game telemetry. PenguTactic is still in <strong>V1</strong>; the complete public-facing personalized coaching experience remains under development.</p>
     </header>
 
     <div class="grid stats" aria-label="Current Set 18 acquisition metrics">
@@ -189,22 +189,22 @@
       <div class="section-head">
         <div>
           <h2>Current project status</h2>
-          <p>Only work integrated into the main branch is treated as completed. Experimental, review-stage, or deployment work is explicitly kept separate.</p>
+          <p>This public status summarizes validated product capabilities while experimental implementation details, credentials, and private operational infrastructure remain outside the public project surface.</p>
         </div>
         <span class="pill pill-active">Phase 1.7 active</span>
       </div>
       <div class="grid status-grid">
         <article class="card status-card">
           <span class="status-dot dot-done" aria-hidden="true"></span>
-          <div><h3>C1 — Longitudinal Core</h3><p>Completed. Versioned snapshots, private locator storage, append-only observations, and delta computation are integrated.</p></div>
+          <div><h3>C1 — Longitudinal Core</h3><p>Completed. Versioned snapshots, pseudonymized scientific outputs, append-only observations, and delta computation are validated.</p></div>
         </article>
         <article class="card status-card">
           <span class="status-dot dot-done" aria-hidden="true"></span>
-          <div><h3>C2 — Multi-region Baseline</h3><p>Completed. The initial Set 18 baseline spans KR, VN2, EUW1, and NA1 and seeded the longitudinal cohort.</p></div>
+          <div><h3>C2 — Multi-region Baseline</h3><p>Completed. The initial Set 18 baseline spans multiple Riot regions and seeds longitudinal player analysis.</p></div>
         </article>
         <article class="card status-card">
           <span class="status-dot dot-done" aria-hidden="true"></span>
-          <div><h3>C3 — Continuous Match Watch</h3><p>Completed at core level. Adaptive scheduling, lobby deduplication, strict Set/Ranked gates, provenance, and fail-closed validation are integrated.</p></div>
+          <div><h3>C3 — Continuous Match Watch</h3><p>Operationally validated. Adaptive scheduling, lobby deduplication, strict Set/Ranked gates, provenance, and fail-closed validation support continuous acquisition.</p></div>
         </article>
         <article class="card status-card">
           <span class="status-dot dot-planned" aria-hidden="true"></span>
@@ -217,7 +217,7 @@
       <div class="section-head">
         <div>
           <h2>V1 roadmap</h2>
-          <p>The roadmap is acquisition-first: establish trustworthy longitudinal evidence before the personalized post-game coaching layer is considered complete.</p>
+          <p>The roadmap is evidence-first: establish trustworthy longitudinal and post-game data before the personalized coaching layer is considered complete.</p>
         </div>
         <span class="pill pill-warning">V1 not complete</span>
       </div>
@@ -225,7 +225,7 @@
         <article class="card done">
           <span class="eyebrow">Done</span>
           <h3>C1 · Core</h3>
-          <p>Snapshot contracts, private identity mapping, append-only storage, and longitudinal deltas.</p>
+          <p>Snapshot contracts, pseudonymized identity handling, append-only storage, and longitudinal deltas.</p>
         </article>
         <article class="card done">
           <span class="eyebrow">Done</span>
@@ -247,30 +247,30 @@
 
     <section id="technical">
       <h2>Technical scope</h2>
-      <p>PenguTactic deliberately distinguishes an integrated acquisition core from deployment and future V1 capabilities.</p>
+      <p>PenguTactic separates public product capabilities from private research data, credentials, and internal operational tooling.</p>
       <div class="grid status-grid">
         <article class="card status-card">
           <span class="status-dot dot-active" aria-hidden="true"></span>
-          <div><h3>Set 18 historical backlog drain</h3><p>In progress. The historical universe is frozen at 3,222 candidate Match-v1 IDs; 2,564 IDs remain to be downloaded and classified.</p></div>
+          <div><h3>Set 18 historical coverage</h3><p>In progress. Historical match coverage is being expanded and classified through strict canonical validation.</p></div>
         </article>
         <article class="card status-card">
           <span class="status-dot dot-done" aria-hidden="true"></span>
           <div><h3>Persistent rejection index — Integrated</h3><p>Reusable non-canonical classifications are persisted with safeguards that prevent unsafe reuse outside their intended acquisition scope.</p></div>
         </article>
         <article class="card status-card">
-          <span class="status-dot dot-planned" aria-hidden="true"></span>
-          <div><h3>Permanent Set 18 runtime</h3><p>Planned. Long-running operational deployment and recovery work remains before permanent unattended operation.</p></div>
+          <span class="status-dot dot-done" aria-hidden="true"></span>
+          <div><h3>Continuous Set 18 acquisition — Operational</h3><p>Long-running acquisition has been validated with bounded scheduling, rate-limit handling, provenance, and fail-closed data admission.</p></div>
         </article>
         <article class="card status-card">
           <span class="status-dot dot-planned" aria-hidden="true"></span>
-          <div><h3>Set 17 Historical Grabber</h3><p>Planned. Historical Set 17 acquisition remains gated by the mature-corpus audit and a bounded archive canary.</p></div>
+          <div><h3>Historical coverage expansion — Planned</h3><p>Additional historical coverage remains gated by dataset-quality audits and bounded validation canaries.</p></div>
         </article>
         <article class="card status-card">
           <span class="status-dot dot-planned" aria-hidden="true"></span>
-          <div><h3><code>PINNED_PLAYER</code></h3><p>Personal longitudinal tracking is planned within V1.</p></div>
+          <div><h3>Personalized player analysis — Planned</h3><p>Longitudinal player timelines and personalized post-game coaching remain core V1 goals.</p></div>
         </article>
       </div>
-      <div class="callout"><strong>Versioning rule:</strong> PenguTactic is not V2. V2 begins only after the operational end-to-end personalized post-game coach closes V1.</div>
+      <div class="callout"><strong>Versioning rule:</strong> PenguTactic remains V1 until the end-to-end personalized post-game coaching experience is operational.</div>
     </section>
 
     <section id="privacy">
@@ -279,17 +279,17 @@
       <div class="grid integrity">
         <article class="card"><h3>Canonical gates</h3><p>Current Set 18 canonical data is restricted to standard Ranked TFT (<code>queue_id == 1100</code>) and <code>set_number == 18</code>.</p></article>
         <article class="card"><h3>Failure isolation</h3><p>Invalid or non-canonical captures remain quarantined instead of silently contaminating canonical datasets.</p></article>
-        <article class="card"><h3>Private identity boundary</h3><p>Raw player identities and credentials stay in private runtime storage; scientific outputs use pseudonymized identifiers.</p></article>
+        <article class="card"><h3>Private data boundary</h3><p>Credentials, raw identities, private research datasets, models, and internal operational tooling are not exposed through this public site.</p></article>
       </div>
     </section>
 
     <section>
       <h2>Purpose</h2>
-      <p>PenguTactic is developed for personal/private research into TFT post-game analysis. It is not intended to provide real-time prescriptive in-game decision making. The public website is a status and product overview; application code, datasets, models, credentials, and private runtime data remain outside this public repository.</p>
+      <p>PenguTactic is being developed as a future public Teamfight Tactics post-game analytics and personalized coaching companion. The current version is an early prototype and research environment. It does not provide real-time prescriptive decision-making, opponent scouting, hidden information, or gameplay automation. Application source code, research datasets, models, credentials, and private runtime data are not publicly exposed.</p>
     </section>
 
     <footer>
-      Status snapshot: 28 August 2026. PenguTactic is an independent project and is not endorsed by Riot Games. Riot Games, Teamfight Tactics, and related marks are trademarks or registered trademarks of Riot Games, Inc.
+      Status snapshot: 29 August 2026. PenguTactic is an independent project and is not endorsed by Riot Games. Riot Games, Teamfight Tactics, and related marks are trademarks or registered trademarks of Riot Games, Inc.
     </footer>
   </main>
   <script src="i18n.js"></script>
